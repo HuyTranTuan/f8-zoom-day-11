@@ -8,10 +8,10 @@ html {
 
 /* XXL and up */
 .container {
-  --gutter: 24px;
+  --gutter: 26px;
   --columns: 12;
 
-  max-width: 1320px;
+  max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
   padding-left: calc(var(--gutter) / 2);

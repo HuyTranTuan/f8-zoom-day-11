@@ -1,0 +1,73 @@
+:root {
+  --font-manrope: "Manrope", sans-serif;
+  --font-roboto-slab: "Roboto Slab", serif;
+
+  --primary: #f8ebc9;
+  --orange: #fd6038;
+  --green: #017848;
+  --black: #0e1412;
+  --white: #ffffff;
+  --yellow: #fed464;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.home-wrapper {
+  background-color: var(--primary);
+  padding-top: 3rem;
+}
+
+.header {
+  height: 7rem;
+}
+
+.header-logo {
+  max-width: 8.4rem;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-roboto-slab);
+  text-decoration: none;
+  align-items: center;
+  color: var(--black);
+}
+
+.header-logo img {
+  max-width: 3.1rem;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+}
+
+.header-logo span {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 1.4rem;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.header-logo span + span {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.header-nav {
+  width: 52.3rem;
+  height: 28;
+  top: 5rem;
+  left: 45.8rem;
+}
+
+.header-nav > ul {
+}
