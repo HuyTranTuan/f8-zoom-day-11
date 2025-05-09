@@ -14,6 +14,13 @@
   box-sizing: border-box;
 }
 
+input,
+textarea,
+button {
+  border: none;
+  outline: none;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -21,12 +28,18 @@ html {
 .home-wrapper {
   background-color: var(--primary);
   padding-top: 3rem;
+  padding-bottom: 13rem;
 }
 
+/* =======================================================
+==========================Home============================
+======================================================= */
 .header {
   height: 7rem;
+  align-items: center;
 }
 
+/* Header Logo */
 .header-logo {
   max-width: 8.4rem;
   display: flex;
@@ -49,7 +62,7 @@ html {
   font-weight: 700;
   font-size: 2.4rem;
   line-height: 1.4rem;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   text-align: center;
 }
 
@@ -57,17 +70,429 @@ html {
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 1.4rem;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   text-align: center;
   margin-top: 0.5rem;
 }
 
+/* Header Nav */
 .header-nav {
   width: 52.3rem;
-  height: 28;
-  top: 5rem;
-  left: 45.8rem;
+  height: 2.8rem;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
-.header-nav > ul {
+.header-nav > li > a {
+  font-family: var(--font-manrope);
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  letter-spacing: 0;
+  text-align: center;
+  text-decoration: none;
+  color: var(--black);
 }
+.header-nav > li > a:hover {
+  color: var(--orange);
+}
+
+/* Header Call */
+.header-call {
+  height: 3.2rem;
+  text-align: right;
+  font-family: var(--font-manrope);
+}
+.header-call > span:first-child {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+}
+
+.header-tel {
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 3.2rem;
+}
+
+/* Home Content */
+.home-content {
+  padding-top: 5rem;
+}
+
+.home-text {
+  margin-top: 10rem;
+}
+
+.home-text > a:has(> span) {
+  font-family: var(--font-roboto-slab);
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  letter-spacing: 0;
+  text-decoration: none;
+  color: var(--black);
+}
+.home-text > a:has(> span):hover {
+  color: var(--orange);
+}
+
+.home-text > h1 {
+  font-family: var(--font-roboto-slab);
+  font-weight: 800;
+  font-size: 5.6rem;
+  line-height: 6rem;
+  letter-spacing: 0;
+  margin-top: 1rem;
+}
+
+.home-text > p {
+  font-family: var(--font-manrope);
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  letter-spacing: 0;
+  margin-top: 2rem;
+}
+
+.home-btn {
+  width: 24rem;
+  height: 6rem;
+  padding-top: 1.5rem;
+  padding-right: 3.2rem;
+  padding-bottom: 1.5rem;
+  padding-left: 3.2rem;
+  gap: 1rem;
+  margin-top: 3rem;
+  background-color: var(--orange);
+  color: var(--white);
+  font-family: var(--font-manrope);
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.home-img-group {
+  position: relative;
+  min-height: 50rem;
+  max-height: 100%;
+  z-index: 1;
+}
+
+.home-img-container {
+  width: 80%;
+  aspect-ratio: 1;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: var(--green);
+  z-index: 2;
+  translate: 0 0;
+}
+.home-img-container:before {
+  content: "";
+  height: 85%;
+  width: 40%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--yellow);
+  z-index: 2;
+}
+
+.home-img-container > img {
+  display: block;
+  width: 70%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  z-index: 4;
+}
+
+.home-img-container > .mask {
+  width: 16.4rem;
+  aspect-ratio: 1.28125;
+  position: absolute;
+  z-index: 20;
+  top: 50%;
+  right: -3rem;
+  translate: 0 -50%;
+}
+
+.home-img-container > .mask > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home-btn-group-watch {
+  position: absolute;
+  width: 20rem;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+/* =======================================================
+==========================About===========================
+======================================================= */
+.about-wrapper {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.about-content {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.about-text {
+  margin-top: 5rem;
+}
+
+.about-text > a:has(> span) {
+  font-family: var(--font-roboto-slab);
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  letter-spacing: 0;
+  text-decoration: none;
+  color: var(--white);
+}
+.about-text > a:has(> span):hover {
+  color: var(--orange);
+}
+
+.about-text > h2 {
+  font-family: var(--font-roboto-slab);
+  font-weight: 700;
+  font-size: 4.2rem;
+  line-height: 5.2rem;
+  letter-spacing: 0;
+  margin-top: 1rem;
+}
+
+.about-text > p {
+  font-family: var(--font-manrope);
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  letter-spacing: 0;
+  margin-top: 2rem;
+}
+
+.about-btn {
+  width: 16.6rem;
+  height: 6rem;
+  padding-top: 1.5rem;
+  padding-right: 3.2rem;
+  padding-bottom: 1.5rem;
+  padding-left: 3.2rem;
+  gap: 1rem;
+  margin-top: 3rem;
+  background-color: var(--orange);
+  color: var(--white);
+  font-family: var(--font-manrope);
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.about-img-group {
+  min-height: 50rem;
+  max-height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.about-img-container {
+  width: 100%;
+  aspect-ratio: 1;
+  background-color: var(--green);
+  z-index: 2;
+}
+
+.about-img-container > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  position: relative;
+  z-index: 4;
+}
+
+.about-img-container > .mask {
+  width: 13rem;
+  height: 13rem;
+  aspect-ratio: 1.28125;
+  position: absolute;
+  z-index: 20;
+  top: 50%;
+  right: -7rem;
+  translate: 0 -50%;
+}
+
+.about-img-container > .mask > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-btn-group-watch {
+  position: absolute;
+  width: 20.5rem;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.about-info {
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.about-info > .about-info-item > span:first-child {
+  font-family: var(--font-roboto-slab);
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+  letter-spacing: 0;
+}
+.about-info > .about-info-item > span:last-child {
+  font-family: var(--font-manrope);
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  letter-spacing: 0;
+}
+
+/* =======================================================
+==========================Service=========================
+======================================================= */
+
+.services-wrapper {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.service-info {
+  text-align: center;
+}
+
+.service-info > a:has(> span) {
+  font-family: var(--font-roboto-slab);
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  letter-spacing: 0;
+  text-align: center;
+  text-decoration: none;
+  color: var(--black);
+}
+.service-info > a:has(> span):hover {
+  color: var(--orange);
+}
+
+.service-info > h2 {
+  font-family: var(--font-roboto-slab);
+  font-weight: 700;
+  font-size: 4.2rem;
+  line-height: 5.2rem;
+  letter-spacing: 0;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.service-info > p {
+  font-family: var(--font-manrope);
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  letter-spacing: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  max-width: 47rem;
+}
+
+/* Service content */
+.service-content {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.article-container {
+  width: 100%;
+  aspect-ratio: 1;
+  position: relative;
+}
+
+.article-container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.article-container > a {
+  display: block;
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: calc(100% - 4rem);
+  height: 7.2rem;
+  color: var(--black);
+  background-color: var(--white);
+  font-family: var(--font-manrope);
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 5rem;
+  letter-spacing: 0;
+  text-align: center;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  transition: color, background-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
+}
+
+.article-container > a:hover {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.btn-service-section {
+  text-align: center;
+}
+
+.btn-section {
+  display: inline-block;
+  width: 13.6rem;
+  height: 6rem;
+  padding-top: 1.5rem;
+  padding-right: 3.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 3.5rem;
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--orange);
+  font-family: var(--font-manrope);
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  letter-spacing: 0;
+}
+
+/* =======================================================
+==========================Feature=========================
+======================================================= */

@@ -12,80 +12,229 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/grid.css">
     <link rel="stylesheet" href="./css/index.css">
-
-    <style>
-        .item {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 30px;
-            font-weight: 600;
-            background-color: lawngreen;
-            color: white;
-            padding: 0.5rem;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/index-breakpoint.css">
 </head>
 <body>
     <div class="wrapper">
         <!-- Home -->
          <div class="home-wrapper">
-            <div class="container home">
-                <div class="header row gx-3">
+            <section class="container home">
+                <div class="header row">
                     <div class="col-2 col-xs-4">
                         <a href="" class="header-logo">
-                            <img src="./img/logo.png" alt="" srcset="">
+                            <img src="./img/logo.png" alt="">
                             <span>Justice</span>
                             <span>Law Firm</span>
                         </a>
                     </div>
-                    <div class="offset-1 col-6 col-xl-6 col-lg-4 col-md-4 col-sm-2 col-xs-2">
-                        <div class="header-nav">
-                            <ul class="d-flex d-xl-flex d-lg-flex d-md-none">
-                                <li><a href="">Home</a></li>
-                                <li><a href="">About</a></li>
-                                <li><a href="">Practice Areas</a></li>
-                                <li><a href="">Attorneys</a></li>
-                                <li><a href="">Page</a></li>
-                            </ul>
+                    <div class="offset-1 offset-lg-0 col-6 col-xl-6 col-lg-5 col-md-4 col-sm-2 col-xs-2">
+                        
+                        <ul class="header-nav d-flex d-xl-flex d-lg-flex d-md-none">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Practice Areas</a></li>
+                            <li><a href="">Attorneys</a></li>
+                            <li><a href="">Page</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3 col-xl-3 col-lg-4 col-md-5 col-sm-6 col-xs-6 offset-lg-1 offset-md-1 offset-sm-2 offset-xs-0">
+                        <div class="header-call">
+                            <span>Call: </span>
+                            <span class="header-tel">(000) 123 456 789</span>
                         </div>
                     </div>
-                    <div class="col-3">
-                        <div class="item">1</div>
-                    </div>
 
-                    <div class="col-12 col-xl-12 col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                        <div class="item">1</div>
+                </div>
+                <div class="home-content gy-md-3 gx-md-3 row row-cols-2 row-cols-xl-2 row-cols-md-2 row-cols-sm-1 row-cols-xs-1">
+                    <div class="col-6 col-xl-6 col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                        <div class="home-text">
+                            <a href=""><span>#1 Law Firm in New York</span></a>
+                            <h1>Where People Meets Personalized Support.</h1>
+                            <p>Where every injury is personal. We are a different kind of law firm. Let our small, passionate group of trial lawyers
+                            fight for your rights!</p>
+                            <button class="home-btn">Get a Consultations</button>
+                        </div>
+                    </div>
+                    <div class="col-6 col-xl-6 col-lg-8 col-md-10 offset-md-1 col-sm-10 col-xs-10 offset-sm-1 offset-xs-1">
+                        <div class="home-img-group">
+                            <div class="home-btn-group-watch">
+                                <a href="" style="display: block;">
+                                    <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg">
+                                        <path id="circlePath" d="
+                                                M 25, 40
+                                                a 20,20 0 1,1 60,0
+                                                20,20 0 1,1 -60,0
+                                            " fill="#0e1412c1" />
+                                        <text>
+                                            <textPath href="#circlePath">
+                                                Watch Our Video
+                                            </textPath>
+                                        </text>
+                                        <text y="50%" x="35%" text-rendering="geometricPrecision" font-size="40px" fill="white">
+                                            ⯈
+                                        </text>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="home-img-container">
+                                <img src="./img/home.png" alt="">
+                                <div class="mask">
+                                    <img src="./img/mask-1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
          </div>
         <!-- End Home -->
 
         <!-- About -->
          <div class="about-wrapper">
-            <div class="container about">
-                <div class="row">
+            <section class="container about">
+                <div class="about-content gy-md-3 gx-md-3 row row-cols-2 row-cols-xl-2 row-cols-md-2 row-cols-sm-1 row-cols-xs-1">
+                    <div class="col-6 col-xl-6 col-lg-6 col-md-10 offset-md-1 d-sm-none d-xs-none">
+                        <div class="about-img-group">
+                            <figure class="about-img-container">
+                                <img src="./img/about.png" alt="">
+                                <div class="mask">
+                                    <img src="./img/mask-2.png" alt="">
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="offset-1 offset-xl-1 offset-lg-1 col-5 col-xl-5 col-lg-5 col-md-12 offset-md-0 col-sm-12 col-xs-12">
+                        <div class="about-text">
+                            <a href=""><span>#About Us</span></a>
+                            <h2>Get the Guidance, Support, and Counsel</h2>
+                            <p>Every year hundreds of clients choose our firm because of our dedication to advocating for our clients
+                                before, during
+                                and after closing.</p>
+                            <div class="about-info d-flex d-xl-flex d-lg-flex d-md-flex ">
+                                <div class="about-info-item">
+                                    <span class="d-block d-xl-block d-lg-block d-md-block d-sm-block d-xs-block">1782</span>
+                                    <span class="d-block d-xl-block d-lg-block d-md-block d-sm-block d-xs-block">Law Cases</span>
+                                </div>
+                                <div class="about-info-item">
+                                    <span class="d-block d-xl-block d-lg-block d-md-block d-sm-block d-xs-block">10+</span>
+                                    <span class="d-block d-xl-block d-lg-block d-md-block d-sm-block d-xs-block">Lawyer</span>
+                                </div>
+                                <div class="about-info-item">
+                                    <span class="d-block d-xl-block d-lg-block d-md-block d-sm-block d-xs-block">98%</span>
+                                    <span class="d-block d-xl-block d-lg-block d-md-block d-sm-block d-xs-block">Happy Clients</span>
+                                </div>
+                            </div>
+                            <button class="about-btn">Learn More</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </section>
          </div>
         <!-- End About -->
 
         <!-- Services -->
          <div class="services-wrapper">
-            <div class="container services">
-                <div class="row">
+            <section class="container services">
+                <div class="service-info">
+                    <a href=""><span>#Service</span></a>
+                    <h2>Our Practice Areas</h2>
+                    <p>Our Law Office provides a professional experience for all our clients, helping them navigate their legal rights.</p>
                 </div>
-            </div>
+
+                <div class="service-content row">
+                    <article class="col-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 gx-3 gy-3">
+                        <div class="article-container">
+                            <img src="./img/service-1.png" alt="">
+                            <a href=""><h3>Personal Injury Law</h3></a>
+                        </div>
+                    </article>
+                    <article class="col-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 gx-3 gy-3">
+                        <div class="article-container">
+                            <img src="./img/service-2.png" alt="">
+                            <a href=""><h3>Employment Law</h3></a>
+                        </div>
+                    </article>
+                    <article class="col-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 gx-3 gy-3">
+                        <div class="article-container">
+                            <img src="./img/service-3.png" alt="">
+                            <a href=""><h3>Immigration Law</h3></a>
+                        </div>
+                    </article>
+                    <article class="col-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 gx-3 gy-3">
+                        <div class="article-container">
+                            <img src="./img/service-4.png" alt="">
+                            <a href=""><h3>Family Law</h3></a>
+                        </div>
+                    </article>
+                    <article class="col-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 gx-3 gy-3">
+                        <div class="article-container">
+                            <img src="./img/service-5.png" alt="">
+                            <a href=""><h3>Divorce Law</h3></a>
+                        </div>
+                    </article>
+                    <article class="col-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 gx-3 gy-3">
+                        <div class="article-container">
+                            <img src="./img/service-6.png" alt="">
+                            <a href=""><h3>Property Law</h3></a>
+                        </div>
+                    </article>
+                </div>
+                <div class="btn-service-section">
+                    <a href="" class="btn-section">View All</a>
+                </div>
+            </section>
          </div>
         <!-- End Service -->
 
         <!-- Team -->
-         <div class="team-wrapper">
-            <div class="container team">
-                <div class="row">
-                
-                </div>
+         <div class="feature-wrapper">
+            <div class="container feature">
+                <section class="feature-content gy-md-3 gx-md-3 row row-cols-2 row-cols-xl-2 row-cols-md-2 row-cols-sm-1 row-cols-xs-1">
+                    <div class="col-6 col-xl-6 col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                        <div class="feature-text">
+                            <a href=""><span>#Features</span></a>
+                            <h2>A Heritage of Legal Talent in the US</h2>
+                            <p>When you are seeking the services of a nationally recognized law firm, you have every right to expect an extra measure
+                            of expertise.</p>
+                            <ul>
+                                <li>Fast and Responsive</li>
+                                <li>Top Notch Communication</li>
+                                <li>Emotional Intelligence</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 col-xl-6 col-lg-8 col-md-10 offset-md-1 col-sm-10 col-xs-10 offset-sm-1 offset-xs-1">
+                        <div class="feature-img-group">
+                            <div class="feature-img-container">
+                                <img src="./img/feature-1.png" alt="">
+                                <div class="mask">
+                                    <img src="./img/mask-3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="feature-content gy-md-3 gx-md-3 row row-cols-2 row-cols-xl-2 row-cols-md-2 row-cols-sm-1 row-cols-xs-1">
+                    <div class="col-6 col-xl-6 col-lg-6 col-md-10 offset-md-1 d-sm-none d-xs-none">
+                        <div class="feature-img-group">
+                            <figure class="feature-img-container">
+                                <img src="./img/feature-2.png" alt="">
+                                <div class="mask">
+                                    <img src="./img/mask-4.png" alt="">
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="offset-1 offset-xl-1 offset-lg-1 col-5 col-xl-5 col-lg-5 col-md-12 offset-md-0 col-sm-12 col-xs-12">
+                        <div class="feature-text">
+                            <a href=""><span>#Features</span></a>
+                            <h2>Exceptional Scope and Diverse Practices</h2>
+                            <p>Our attorneys provide clients with extensive knowledge and experience in each specialized area of practice we offer. We
+                            are providing the best.</p>
+                            <button class="feature-btn">Our Services</button>
+                        </div>
+                    </div>
+                </section>
             </div>
          </div>
         <!-- End Team -->

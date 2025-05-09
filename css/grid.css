@@ -45,16 +45,16 @@ html {
   margin-top: var(--gutter-y);
 }
 
-.row > [class*="col-"] {
-  width: calc(100% / var(--columns) * var(--column-number));
-}
-
 .row > [class*="offset-"] {
   margin-left: calc(100% / var(--columns) * var(--col-offset));
 }
 
 .row[class*="row-cols-"] > * {
   width: calc(100% / var(--row-cols-number));
+}
+
+.row > [class*="col-"] {
+  width: calc(100% / var(--columns) * var(--column-number));
 }
 
 /* Display */
@@ -648,7 +648,7 @@ html {
     --gutter-y: calc(var(--gutter) * 3);
   }
   /* Offset */
-  .offset-0 {
+  .offset-md-0 {
     --col-offset: 0;
   }
   .offset-md-1 {
