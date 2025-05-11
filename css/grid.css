@@ -846,13 +846,13 @@ html {
   }
   /* Display */
   .d-sm-none {
-    display: none;
+    display: none !important;
   }
   .d-sm-flex {
-    display: flex;
+    display: flex !important;
   }
   .d-sm-block {
-    display: block;
+    display: block !important;
   }
 }
 
@@ -1006,12 +1006,12 @@ html {
   }
   /* Display */
   .d-xs-none {
-    display: none;
+    display: none !important;
   }
   .d-xs-flex {
-    display: flex;
+    display: flex !important;
   }
   .d-xs-block {
-    display: block;
+    display: block !important;
   }
 }

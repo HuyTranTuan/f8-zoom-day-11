@@ -95,6 +95,10 @@
     line-height: 2.1rem;
   }
 
+  .services-wrapper {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
   .service-info > a:has(> span) {
     line-height: 1.2rem;
     margin-top: 2.1rem;
@@ -115,6 +119,222 @@
     font-size: 1.9rem;
     line-height: 4rem;
     padding: 1rem 1.5rem;
+  }
+
+  .feature-content + .feature-content {
+    margin-top: 5rem;
+  }
+
+  .feature .feature-content:first-child {
+    flex-direction: column-reverse;
+  }
+
+  .feature-img-container > .mask {
+    width: 6.3rem;
+    height: 7rem;
+    left: -3rem;
+  }
+  .feature-text > a:has(> span) {
+    font-size: 1.2rem;
+    line-height: 2.1rem;
+  }
+
+  .feature-text > h2 {
+    font-size: 3rem;
+    line-height: 3.7rem;
+    margin-top: 0.5rem;
+  }
+
+  .feature-text > p {
+    font-size: 1.2rem;
+    line-height: 2.1rem;
+    margin-top: 0.5rem;
+  }
+
+  .feature-text > ul {
+    font-size: 1.2rem;
+    line-height: 2.1rem;
+    margin-top: 0.5rem;
+    padding-left: 2rem;
+  }
+
+  .feature-btn {
+    width: 13rem;
+    height: 4.2rem;
+    padding-top: 1rem;
+    padding-right: 2.5rem;
+    padding-bottom: 1rem;
+    padding-left: 2.5rem;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    margin-top: 1.5rem;
+  }
+
+  .team {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .team-info > a:has(> span) {
+    font-size: 1.2rem;
+    line-height: 2.1rem;
+  }
+  .team-info > h2 {
+    font-size: 3rem;
+    line-height: 3.7rem;
+    margin-top: 0.5rem;
+  }
+  .team-info > p {
+    font-size: 1.2rem;
+    line-height: 2.1rem;
+    margin-top: 0.5rem;
+  }
+
+  .btn-team-section {
+    margin-top: 5rem;
+  }
+
+  .btn-team-section > .btn-section {
+    width: 18rem;
+    height: 6rem;
+    padding-top: 1.5rem;
+    padding-right: 3.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 3.5rem;
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+
+  .award {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .award-info > a:has(> span) {
+    font-size: 1.2rem;
+    line-height: 2.1rem;
+  }
+  .award-info > h2 {
+    font-size: 3rem;
+    line-height: 3.7rem;
+    margin-top: 0.5rem;
+  }
+  .testimonial-info > a:has(> span) {
+    font-size: 1.2rem;
+    line-height: 2.1rem;
+  }
+
+  .testimonial {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .testimonial-info > h2 {
+    font-size: 3rem;
+    line-height: 3.7rem;
+    margin-top: 0.5rem;
+  }
+  .testimonial-content {
+    margin-top: 3rem;
+  }
+  .testimonial-pagination {
+    margin-top: 3rem;
+  }
+  .faq {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .faq-info > a:has(> span) {
+    font-size: 1.2rem;
+    line-height: 2.1rem;
+  }
+
+  .faq-info > h2 {
+    font-size: 3rem;
+    line-height: 3.7rem;
+    margin-top: 1rem;
+  }
+
+  .faq-btn-goup {
+    margin-top: 0.5rem;
+    gap: 0.5rem;
+  }
+
+  .faq-btn-goup > li > a {
+    font-size: 1.2rem;
+    line-height: 2.1rem;
+  }
+  .faq-content > article > h3 {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+  .faq-content > article > p {
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+  .faq-content > article > a {
+    top: 1rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .blog-info > a:has(> span) {
+    font-size: 1.2rem;
+    line-height: 2.1rem;
+  }
+
+  .blog-info > h2 {
+    font-size: 3rem;
+    line-height: 3.7rem;
+    margin-top: 0.5rem;
+  }
+
+  .blog-info > p {
+    font-size: 1.2rem;
+    line-height: 2.1rem;
+    margin-top: 0.5rem;
+  }
+
+  .blog {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .blog-content {
+    margin-top: 0rem;
+  }
+  .blog-btn-group-beneath {
+    margin-top: 2rem;
+  }
+
+  .cta {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .cta-anchor {
+    font-size: 1.2rem;
+    line-height: 2.1rem;
+  }
+  .cta-title {
+    font-size: 3rem;
+    line-height: 3.7rem;
+    margin-top: 0.5rem;
+  }
+  .cta-introduce {
+    font-size: 1.2rem;
+    line-height: 2.1rem;
+    margin-top: 0.5rem;
+  }
+  .cta-btn {
+    font-size: 1.2rem;
+    line-height: 2.1rem;
+    width: 18rem;
+    height: 3.7rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    margin-top: 2rem;
   }
 }
 @media (max-width: 575.98px) {
