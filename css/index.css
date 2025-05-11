@@ -786,6 +786,11 @@ html {
   letter-spacing: 0;
   text-align: center;
 }
+
+.award-info > a:has(> span):hover {
+  color: var(--orange);
+}
+
 .award-info > h2 {
   font-family: var(--font-roboto-slab);
   font-weight: 700;
@@ -835,6 +840,9 @@ html {
   letter-spacing: 0;
   color: var(--gray);
   text-decoration: none;
+}
+.testimonial-info > a:has(> span):hover {
+  color: var(--orange);
 }
 
 .testimonial-info > h2 {
@@ -988,6 +996,10 @@ html {
   letter-spacing: 0;
 }
 
+.faq-info > a:has(> span):hover {
+  color: var(--orange);
+}
+
 .faq-info > h2 {
   font-family: var(--font-roboto-slab);
   font-weight: 700;
@@ -1120,6 +1132,10 @@ html {
   letter-spacing: 0;
   color: var(--gray);
   text-decoration: none;
+}
+
+.blog-info > a:has(> span):hover {
+  color: var(--orange);
 }
 
 .blog-info > h2 {
@@ -1360,16 +1376,37 @@ html {
   display: inline-block;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  transition: color 0.3s ease-in;
+}
+
+.footer-link > section > ul > li > a:hover {
+  color: var(--orange);
 }
 
 .footer-link > section > p {
-  color: var(--gray);
   margin-top: 1rem;
-  font-family: Manrope;
+  color: var(--gray);
+  font-family: var(--font-manrope);
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 2.8rem;
   letter-spacing: 0;
+}
+
+.footer-link > section > a {
+  margin-top: 0.5rem;
+  color: var(--gray);
+  font-family: var(--font-manrope);
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  letter-spacing: 0;
+  text-decoration: none;
+  transition: color 0.3s ease-in;
+}
+
+.footer-link > section > a:hover {
+  color: var(--orange);
 }
 
 .footer-functional {
@@ -1380,7 +1417,7 @@ html {
 }
 .footer-functional-left > p {
   margin-top: 2rem;
-  font-family: Manrope;
+  font-family: var(--font-manrope);
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 2.4rem;
@@ -1404,6 +1441,6 @@ html {
   margin-left: 1rem;
 }
 
-..footer-functional-right > a:first-child {
+.footer-functional-right > a:first-child {
   margin-left: 0;
 }
