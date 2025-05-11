@@ -499,6 +499,10 @@ html {
 /* =======================================================
 ==========================Feature=========================
 ======================================================= */
+.feature-wrapper {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
 
 .feature-content + .feature-content {
   margin-top: 10rem;

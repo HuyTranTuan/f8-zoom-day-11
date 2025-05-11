@@ -121,8 +121,13 @@
     padding: 1rem 1.5rem;
   }
 
+  .feature-wrapper {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
   .feature-content + .feature-content {
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
 
   .feature .feature-content:first-child {
